@@ -1,4 +1,4 @@
-import "Service.css";
+import "./Service.css";
 export default function Service() {
   return (
     <div className="landservice">
@@ -9,6 +9,7 @@ export default function Service() {
       </div>
       <div className="navlinks">
         <ul>
+        
         </ul>
       </div>
     </div>
