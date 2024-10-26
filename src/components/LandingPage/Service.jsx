@@ -37,20 +37,105 @@ export default function Service() {
   ];
 
   const product = [
-    // ...other service data for product development
+    {
+      imageurl : cutomsoftware,
+      head: "Product Strategy",
+      para: "Elevate Your Product Strategy, enabled by design and data to get competitive edge",
+    },
+    {imageurl : webapp,
+      head: "Product Design",
+      para: "Boost your digital products and keep your prospects hooked with our product design services.",
+    },
+    {imageurl : mobileapp,
+      head: "Discovery Workshop",
+      para: "Validate your product ideas and scope with minimum risks and investments.",
+    },
+    {imageurl : devops,
+      head: "Clustox Product Studio",
+      para: "Know the right potential of your project and lead the industry with future-ready products.",
+    },
+    {imageurl : legacy,
+      head: "POC/MVP Development",
+      para: "Validate your ideas with proof of concept using a rigorous testing road map.",
+    },
+    {imageurl : qa,
+      head: "Augmented product",
+      para: "Redefine industry standards and empower your business through elite augmented products.",
+    },
   ];
 
   const advisory = [
-    // ...other service data for advisory/consultancy
-  ];
+    {
+      imageurl : cutomsoftware,
+      head: "Digital Transformation",
+      para: "Drive impact through a digital-first strategy with Clustox’ digital transformation services.",
+    },
+    {imageurl : webapp,
+      head: "Product development & growth",
+      para: "Accelerate your digital product success with test-and-learn growth strategies",
+    },
+    {imageurl : mobileapp,
+      head: "Process Consulting & Audit",
+      para: "Carve your path to excellence through world-class consultancy services.",
+    },
+    {imageurl : devops,
+      head: "Technology leadership advisory",
+      para: "Shape your product’s path to perfection through visionary leadership advisory.",
+    }, ];
 
   const techSolutions = [
-    // ...other service data for technology solutions
-  ];
+    {
+      imageurl : cutomsoftware,
+      head: "Mulesoft",
+      para: "Fuel your digital capabilities with our next-gen Mulesoft solutions.",
+    },
+    {imageurl : webapp,
+      head: "AWS",
+      para: "Scale your business growth by focusing on winning customers through innovative solutions.",
+    },
+    {imageurl : mobileapp,
+      head: "Shopify",
+      para: "Accelerate enterprise-grade capabilities and deliver conversion-focused experiences.",
+    },
+    {imageurl : devops,
+      head: "Power BI",
+      para: "Transform your data into confident decisions and actionable insights with AI capabilities.",
+    },
+    {imageurl : legacy,
+      head: "TIBCO",
+      para: "Empower your business with enterprise-grade and high-quality TIBCO solutions.",
+    },
+    {imageurl : qa,
+      head: "Managed IT services",
+      para: "Keep your IT infrastructure scalable and stable with Clustox managed IT services.",
+    },  ];
 
   const emergingTech = [
-    // ...other service data for emerging tech
-  ];
+    {
+      imageurl : cutomsoftware,
+      head: "Data Science ",
+      para: "Get a steady stream of data democratization and insights for better decision making.",
+    },
+    {imageurl : webapp,
+      head: "AI and ML",
+      para: "Supercharge your innovation engine with next-gen AI-powered technologies",
+    },
+    {imageurl : mobileapp,
+      head: "Blockchain",
+      para: "Join the revolutionizing industry of passionate entrepreneurs with accelerating blockchain.",
+    },
+    {imageurl : devops,
+      head: "Internet of Things",
+      para: "Drive sustainability by value-centered IoT solutions and build multi-level data pipelines.",
+    },
+    {imageurl : legacy,
+      head: "Generative AI",
+      para: "Use predictive capabilities to paint a vision of limitless possibilities and innovation.",
+    },
+    {imageurl : qa,
+      head: "Web3",
+      para: "Utilize peer-to-peer decentralized networks with our futuristic and innovative Web3 expertise.",
+    },  ];
 
   const [detail, setDetail] = useState(sofware);
   const [activeIndex, setActiveIndex] = useState(0);
