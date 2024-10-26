@@ -52,6 +52,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 15px;
+        
 
         .detailbox {
             padding: 20px;
@@ -60,7 +61,7 @@
             flex-direction: column;
             gap: 7.5px;
             align-items:start;
-
+            height: 100%;
             .linkbutton {
                 padding: 10px 0px;
                 display: flex;
