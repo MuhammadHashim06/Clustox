@@ -1,29 +1,36 @@
 import { useState } from "react";
+import cutomsoftware from '../../../public/customsoftware.png'
+import devops from '../../../public/devops.png'
+import legacy from '../../../public/legacy.png'
+import mobileapp from '../../../public/mobileapp.png'
+import qa from '../../../public/qa.png'
+import webapp from '../../../public/webapp.png'
 import "./Service.css";
 
 export default function Service() {
   const sofware = [
     {
+      imageurl : cutomsoftware,
       head: "Custom Software Development",
       para: "Power your business with enterprise-grade solutions tailored to your specific needs.",
     },
-    {
+    {imageurl : webapp,
       head: "Web App Development",
       para: "Scale your business with our dedicated web app development services.",
     },
-    {
+    {imageurl : mobileapp,
       head: "Mobile App Development",
       para: "Enable seamless user experiences with superior digital mobile app development.",
     },
-    {
+    {imageurl : devops,
       head: "DevOps",
       para: "Automate, integrate & deliver faster with diverse and comprehensive DevOps solutions.",
     },
-    {
+    {imageurl : legacy,
       head: "Legacy Software Modernization",
       para: "Regain the effectiveness of apps with upgraded & strategic legacy software modernization.",
     },
-    {
+    {imageurl : qa,
       head: "QA & Testing",
       para: "Streamline your testing & ship bulletproof software with state-of-the-art QA & Testing.",
     },
@@ -115,9 +122,14 @@ export default function Service() {
       </div>
       <div className="detail">
         {detail.map((d, index) => (
-          <div key={index}>
-            <h2>{d.head}</h2>
-            <p>{d.para}</p>
+          <div className="detailbox" key={index}>
+          <img src={d.imageurl} alt="Logo.png" />
+            <h2 className="font-bold text-lg">{d.head}</h2>
+            <p className="text-md text-slate-700">{d.para}</p>
+            <div className="linkbutton">
+              <button className="chat">Let&lsquo;s Chat <i className="fas fa-arrow-right"></i> </button>
+              <button>Learn more</button>
+            </div>
           </div>
         ))}
       </div>
