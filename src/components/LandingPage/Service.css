@@ -1,3 +1,42 @@
-.landservice{
-    
+.landservice {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .heading {
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bolder;
+
+        span:nth-child(1) {
+            color: rgb(0, 194, 108);
+        }
+
+        span:nth-child(2) {
+            color: rgb(1, 25, 69);
+        }
+    }
+
+    .navlinks ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: grey;
+            gap: 20px;
+
+            i {
+                font-size: larger;
+            }
+        }
+    }
+    .navlinks ul:hover{
+        cursor: pointer;
+    }
 }
