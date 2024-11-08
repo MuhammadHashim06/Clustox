@@ -1,19 +1,15 @@
-import './App.css'
-import Header from './components/LandingPage/Header'
-import Navbar from './components/LandingPage/Navbar'
-import Oppotunity from './components/LandingPage/Oppotunity'
-import Service from './components/LandingPage/Service'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Homepage from "./components/LandingPage/Homepage";
+
 function App() {
-
-
   return (
     <>
-    <Navbar/>
-    <Header/>
-    <Service/>
-    <Oppotunity/>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

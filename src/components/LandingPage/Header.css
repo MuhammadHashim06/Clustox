@@ -1,4 +1,4 @@
-.header {
+/* .header {
     background-image: url("./../../../public/bg-hero.png");
     background-position: center;
     background-size: cover;
@@ -67,5 +67,142 @@
     .box:nth-child(6) {
         border-right: none;
         border-bottom: none;
+    }
+} */
+
+/* General Header Styles */
+.header {
+    background-image: url("./../../../public/bg-hero.png");
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    padding: 10% 10% 0% 10%;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Bullets Styles */
+.bullets {
+    padding: 0px 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.01);
+    border-radius: 5px;
+}
+
+/* Awards Section (Grid Layout) */
+.awards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+    border-radius: 25px;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    width: 100%;
+}
+
+/* Box Styles (Individual Award Boxes) */
+.box {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    gap: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.box .wing img {
+    width: 50px;
+}
+
+.box:nth-child(1) {
+    border-left: none;
+    border-top: none;
+}
+
+.box:nth-child(2) {
+    border-top: none;
+}
+
+.box:nth-child(3) {
+    border-right: none;
+    border-top: none;
+}
+
+.box:nth-child(4) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.box:nth-child(5) {
+    border-bottom: none;
+}
+
+.box:nth-child(6) {
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media screen and (max-width: 1024px) {
+    /* Adjust Header Padding for Tablets */
+    .header {
+        padding: 8% 5% 0% 5%; /* Reduced padding */
+    }
+
+    /* Adjust Bullets Padding */
+    .bullets {
+        padding: 6px 12px; /* Increased padding for better visibility */
+    }
+
+    /* Awards Section (2 columns for tablets) */
+    .awards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 15px;
+    }
+
+    /* Box Padding for Tablets */
+    .box {
+        padding: 20px 30px; /* Reduced padding */
+    }
+
+    /* Adjust Image Size inside Boxes */
+    .box .wing img {
+        width: 40px; /* Smaller image size for tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust Header Padding for Mobile */
+    .header {
+        padding: 6% 5% 0% 5%; /* Further reduced padding */
+    }
+
+    /* Awards Section (1 column for mobile) */
+    .awards {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+        gap: 10px; /* Reduced gap between boxes */
+    }
+
+    /* Box Padding for Mobile */
+    .box {
+        padding: 15px 25px; /* Smaller padding for mobile */
+    }
+
+    /* Adjust Image Size inside Boxes */
+    .box .wing img {
+        width: 35px; /* Smaller image size for mobile */
+    }
+
+    /* Adjust Bullet Padding for Mobile */
+    .bullets {
+        padding: 5px 10px; /* Reduced padding for bullets */
     }
 }

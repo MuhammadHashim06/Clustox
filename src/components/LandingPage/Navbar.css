@@ -10,7 +10,11 @@
   -webkit-backdrop-filter: blur(50px);
   transition: all ease 0.25s;
   z-index: 5;
-
+  .links{
+    display: flex;
+      gap: 20px;
+      align-items: center;
+  }
   .links ul {
     display: flex;
     gap: 50px;
@@ -51,9 +55,17 @@
 .navbar.scrolled{
   color: black;
   background-color: rgba(255, 255, 255, 0.9) ;
+  transition: all 1s ease;
   .callmeeting button {
     border: 1px solid black;
     border-radius: 5px;
     padding: 4px 8px;
   }
+
+}
+@media screen and (max-width: 768px) {
+  /* .links{
+  display: flex;
+    gap: 20px;
+} */
 }
