@@ -1,0 +1,163 @@
+/* .landopportunity {
+    background: #0040d1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 5% 10%;
+    gap: 5%;
+    align-items: center;
+.opportunity{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.arrow{
+    position:absolute;
+    width: 30px;
+    right: 25px;
+    bottom: 25px;
+}
+.logo img{
+    width: 110px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .leftbox{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    span{
+        color: #00c26c;
+    }
+
+    .card{
+        position: relative;
+        display: flex ;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+} */
+
+.landopportunity {
+    background: #0040d1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 5% 10%;
+    gap: 5%;
+    align-items: center;
+}
+
+.opportunity {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.arrow {
+    position: absolute;
+    width: 30px;
+    right: 25px;
+    bottom: 25px;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+span {
+    color: #00c26c;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+/* Tablet and Mobile Responsive Styles */
+@media (max-width: 768px) { /* Tablet */
+    .landopportunity {
+        grid-template-columns: 1fr; /* Stack columns on tablets */
+        padding: 5% 5%; /* Reduced padding for smaller screens */
+    }
+
+    .opportunity {
+        gap: 30px; /* Reduced gap between sections */
+    }
+
+    .arrow {
+        right: 15px; /* Adjust arrow position for tablet */
+        bottom: 15px;
+    }
+
+    .logo img {
+        width: 90px; /* Smaller logo on tablet */
+    }
+
+    .leftbox {
+        gap: 30px; /* Reduced gap for leftbox */
+    }
+
+    .content {
+        gap: 8px; /* Reduced gap inside content */
+    }
+
+    .card {
+        padding: 20px; /* Reduced padding for cards */
+        gap: 8px; /* Smaller gap in cards */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .landopportunity {
+        padding: 5% 3%; /* Further reduced padding for mobile */
+    }
+
+    .opportunity {
+        gap: 20px; /* Smaller gap between sections */
+    }
+
+    .arrow {
+        right: 10px; /* Adjust arrow position for mobile */
+        bottom: 10px;
+    }
+
+    .logo img {
+        width: 80px; /* Even smaller logo on mobile */
+    }
+
+    .leftbox {
+        gap: 20px; /* Further reduced gap for leftbox */
+    }
+
+    .content {
+        gap: 6px; /* Smaller gap inside content */
+    }
+
+    .card {
+        padding: 15px; /* Even smaller padding for cards */
+        gap: 6px; /* Smaller gap in cards */
+    }
+}

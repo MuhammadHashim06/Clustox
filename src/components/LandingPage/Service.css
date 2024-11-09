@@ -98,95 +98,97 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    .heading {
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bolder;
+    }
+    
+    .heading span:nth-child(1) {
+        color: rgb(0, 194, 108);
+    }
+    
+    .heading span:nth-child(2) {
+        color: rgb(1, 25, 69);
+    }
+    
+    /* Navigation Links */
+    .navlinks ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .navlinks ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+        gap: 20px;
+    }
+    
+    .navlinks ul li i {
+        font-size: larger;
+    }
+    
+    .navlinks ul:hover {
+        cursor: pointer;
+    }
+    
+    .navlinks .active {
+        color: #0443d2;
+        border-bottom: 1px solid #1677ff;
+    }
+    
+    /* Detail Section */
+    .detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .detailbox {
+        padding: 20px;
+        background-color: #f5f9ff;
+        display: flex;
+        flex-direction: column;
+        gap: 7.5px;
+        align-items: start;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .linkbutton {
+        padding: 10px 0px;
+        display: flex;
+        gap: 5px;
+        bottom: 0;
+    }
+    
+    .linkbutton button {
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+        font-size: small;
+    }
+    
+    .chat {
+        background-color: black;
+        color: white;
+        transition: all 0.5s ease;
+    }
+    
+    .chat:hover {
+        background-color: white;
+        color: black;
+    }
+    
 }
 
 /* Heading Styles */
-.heading {
-    width: 100%;
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.heading span:nth-child(1) {
-    color: rgb(0, 194, 108);
-}
-
-.heading span:nth-child(2) {
-    color: rgb(1, 25, 69);
-}
-
-/* Navigation Links */
-.navlinks ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.navlinks ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: grey;
-    gap: 20px;
-}
-
-.navlinks ul li i {
-    font-size: larger;
-}
-
-.navlinks ul:hover {
-    cursor: pointer;
-}
-
-.navlinks .active {
-    color: #0443d2;
-    border-bottom: 1px solid #1677ff;
-}
-
-/* Detail Section */
-.detail {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-}
-
-.detailbox {
-    padding: 20px;
-    background-color: #f5f9ff;
-    display: flex;
-    flex-direction: column;
-    gap: 7.5px;
-    align-items: start;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.linkbutton {
-    padding: 10px 0px;
-    display: flex;
-    gap: 5px;
-    bottom: 0;
-}
-
-.linkbutton button {
-    padding: 5px 10px;
-    border-radius: 4px;
-    border: 1px solid black;
-    font-size: small;
-}
-
-.chat {
-    background-color: black;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-.chat:hover {
-    background-color: white;
-    color: black;
-}
 
 /* Media Queries for Tablet and Mobile */
 
@@ -194,80 +196,84 @@
 @media screen and (max-width: 1024px) {
     .landservice {
         padding: 60px 40px; /* Reduced padding */
+        .heading {
+            font-size: 2em; /* Smaller font size */
+        }
+    
+        /* Navigation Links (stack vertically) */
+        .navlinks ul {
+            flex-direction: column; /* Stack items vertically */
+            gap: 15px; /* Reduced gap */
+        }
+    
+        /* Detail Section (2 columns for tablet) */
+        .detail {
+            grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
+        }
+    
+        .detailbox {
+            padding: 15px; /* Reduced padding */
+        }
+    
+        .linkbutton {
+            gap: 10px; /* Increased gap for better spacing */
+        }
+    
+        .linkbutton button {
+            padding: 8px 12px; /* Slightly bigger buttons */
+        }
+    
+        .chat {
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
     }
 
-    .heading {
-        font-size: 2em; /* Smaller font size */
-    }
-
-    /* Navigation Links (stack vertically) */
-    .navlinks ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 15px; /* Reduced gap */
-    }
-
-    /* Detail Section (2 columns for tablet) */
-    .detail {
-        grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
-    }
-
-    .detailbox {
-        padding: 15px; /* Reduced padding */
-    }
-
-    .linkbutton {
-        gap: 10px; /* Increased gap for better spacing */
-    }
-
-    .linkbutton button {
-        padding: 8px 12px; /* Slightly bigger buttons */
-    }
-
-    .chat {
-        font-size: 14px; /* Adjust font size for smaller screens */
-    }
+    
 }
 
 /* Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .landservice {
         padding: 40px 20px; /* Even smaller padding for mobile */
+
+
+        .heading {
+            font-size: 1.5em; /* Smaller font size */
+        }
+    
+        /* Navigation Links (stack vertically) */
+        .navlinks ul {
+            flex-direction: column; /* Stack items vertically */
+            gap: 10px; /* Reduced gap */
+            align-items: center; /* Center align */
+        }
+    
+        .navlinks ul li i {
+            font-size: 1.2em; /* Adjust icon size for mobile */
+        }
+    
+        /* Detail Section (1 column for mobile) */
+        .detail {
+            grid-template-columns: 1fr; /* 1 column on mobile */
+        }
+    
+        .detailbox {
+            padding: 15px; /* Reduced padding */
+        }
+    
+        .linkbutton {
+            gap: 8px; /* Adjusted gap */
+        }
+    
+        .linkbutton button {
+            padding: 6px 10px; /* Smaller buttons */
+            font-size: 12px; /* Smaller font size for buttons */
+        }
+    
+        .chat {
+            font-size: 13px; /* Adjust font size */
+        }
     }
 
-    .heading {
-        font-size: 1.5em; /* Smaller font size */
-    }
-
-    /* Navigation Links (stack vertically) */
-    .navlinks ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Reduced gap */
-        align-items: center; /* Center align */
-    }
-
-    .navlinks ul li i {
-        font-size: 1.2em; /* Adjust icon size for mobile */
-    }
-
-    /* Detail Section (1 column for mobile) */
-    .detail {
-        grid-template-columns: 1fr; /* 1 column on mobile */
-    }
-
-    .detailbox {
-        padding: 15px; /* Reduced padding */
-    }
-
-    .linkbutton {
-        gap: 8px; /* Adjusted gap */
-    }
-
-    .linkbutton button {
-        padding: 6px 10px; /* Smaller buttons */
-        font-size: 12px; /* Smaller font size for buttons */
-    }
-
-    .chat {
-        font-size: 13px; /* Adjust font size */
-    }
+   
 }
