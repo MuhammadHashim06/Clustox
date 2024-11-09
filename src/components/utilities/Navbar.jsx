@@ -48,6 +48,7 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Drawer, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -80,8 +81,8 @@ export default function Navbar() {
 
   return (
     <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      <div className="logo text-3xl">
-        Clusto<span className="text-green-600">X</span>
+      <div className="logo text-3xl"> <Link to="/">
+        Clusto<span className="text-green-600">X</span></Link>
       </div>
 
 <div className="links" >
@@ -95,18 +96,18 @@ export default function Navbar() {
       ) : (
         <div className="links">
           <ul>
-            <a href="#">
+            <Link to="service">
               <li>Services</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="case-studies">
               <li>Case Studies</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="hire-expert">
               <li>Hire Expert</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="resources">
               <li>Resources</li>
-            </a>
+            </Link>
           </ul>
         </div>
       )}
@@ -122,18 +123,18 @@ export default function Navbar() {
         visible={isDrawerVisible}
       >
         <ul className="drawer-links">
-          <a href="#">
+          <Link to="service">
             <li>Services</li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="case-studies">
             <li>Case Studies</li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="hire-expert">
             <li>Hire Expert</li>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="resources">
             <li>Resources</li>
-          </a>
+          </Link>
         </ul>
       </Drawer>
       </div>
